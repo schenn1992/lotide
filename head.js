@@ -15,6 +15,3 @@ const head = function(array) {
   }
   return itemHead;
 };
-
-
-
