@@ -8,7 +8,7 @@ const map = function(array, callback) {
   return results;
 };
 
-//const results1 = map(words, word => word[0]);
+//const results1 = map(words, word => word[0]); //map(words, function(word) {return word[0]})
 //console.log(results1);
 
 const eqArrays = function(arrayA, arrayB) {
@@ -29,10 +29,12 @@ const eqArrays = function(arrayA, arrayB) {
 
 const assertArraysEqual = function(arrayA, arrayB) {
   if (eqArrays(arrayA, arrayB)) {
-    console.log(`🟢 Assertion Passed:  ${arrayA}  === ${arrayB}`);
+    console.log(`🟢🟢🟢 Assertion Passed:  ${arrayA}  === ${arrayB}`);
   } else {
-    console.log(`🔴 Assertion Failed: ${arrayA}  !== ${arrayB}`);
+    console.log(`🔴🔴🔴 Assertion Failed: ${arrayA}  !== ${arrayB}`);
   }
 };
 
-assertArraysEqual(map(["Hello", "World"], word => word[0]), map(["Hi", "Windy"], word => word[0]));
+// assertArraysEqual(map(["Hello", "World"], word => word[0]), map(["Hi", "Windy"], word => word[0]));
+
+module.exports = map;
