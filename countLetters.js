@@ -1,6 +1,5 @@
 const countLetters = function(sentences) {
   let results = {};
-  
   for (let letter of sentences) {
     if (results[letter]) {
       results[letter] += 1;
@@ -11,4 +10,6 @@ const countLetters = function(sentences) {
   return results;
 };
 
-console.log(countLetters("LHL"));
+module.exports = countLetters;
+
+//console.log(countLetters("LHL"));
