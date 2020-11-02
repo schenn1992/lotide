@@ -15,7 +15,7 @@ const middle = function(array) {
     return array.slice(middleIndex - 1, middleIndex + 1); 
   }
 
-}; // end of for loop
+}; 
 
 assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]) // => [3]
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3,4]); // => [3,4]
