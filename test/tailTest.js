@@ -9,6 +9,7 @@ const assert = require('chai').assert;
 const tail   = require('../tail');
 
 describe("#tail", () => {
+  
   it("returns 'lighthouse', 'labs' for words", () => {
     assert.strictEqual(tail["Yo Yo", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]
   });
