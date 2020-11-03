@@ -21,7 +21,7 @@ module.exports = {
   head:   head,
   tail:   tail,
   middle: middle,
-  wihtout: without,
+  without: without,
   takeUntil: takeUntil,
   letterPositions: letterPositions,
   findKeyByValue: findKeyByValue,
