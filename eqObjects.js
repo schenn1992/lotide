@@ -8,7 +8,6 @@ const eqObjects = function(object1, object2) {
     return false;
   }
   for (let key of objOneKeys) {
-    //console.log(object1[key]);
     if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
       let result = eqArrays(object1[key], object2[key]);
       if (!result) {
