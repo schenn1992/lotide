@@ -16,9 +16,9 @@ const eqArrays = function(arrayA, arrayB) {
 
 const assertArraysEqual = function(arrayA, arrayB) {
   if (eqArrays(arrayA, arrayB)) {
-    console.log(`🟢 Assertion Passed:  ${arrayA}  === ${arrayB}`);
+    console.log(`🟢🟢🟢  Assertion Passed:  ${arrayA}  === ${arrayB}`);
   } else {
-    console.log(`🔴 Assertion Failed: ${arrayA}  !== ${arrayB}`);
+    console.log(`🔴🔴🔴 Assertion Failed: ${arrayA}  !== ${arrayB}`);
   }
 };
 
@@ -36,7 +36,6 @@ const without = function(source, itemsToRemove) {
 };
 
 module.exports = without;
-
-// console.log(without([1, 2, 3], [1])); // [2, 3]
-// console.log(without(["1", "2", "3"], ["1", "3", 2])); // ["1", "2"]
+//assertArraysEqual(without([1, 2, 3], [1])); // [2, 3]
+//onsole.log(without(["1", "2", "3"], ["1", "3", 2])); // ["2"]
 
